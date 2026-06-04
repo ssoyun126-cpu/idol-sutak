@@ -67,13 +67,16 @@
     <p>탭해서 재생</p>
   </div>
 
-  <iframe id="player" src="" allow="autoplay; fullscreen" allowfullscreen></iframe>
+  <iframe
+    id="player"
+    src="https://drive.google.com/file/d/1lRXnNK_dxkPq-Zm0O3T1IkHm83xFM9Uq/preview"
+    allow="autoplay"
+    allowfullscreen>
+  </iframe>
 
   <script>
     const overlay = document.getElementById('overlay');
-    const player = document.getElementById('player');
     overlay.addEventListener('click', () => {
-      player.src = "https://www.youtube.com/embed/aEas5KU0R8s?autoplay=1&mute=0&loop=1&playlist=aEas5KU0R8s&controls=0&rel=0&modestbranding=1";
       overlay.style.opacity = '0';
       setTimeout(() => { overlay.style.display = 'none'; }, 600);
     });
